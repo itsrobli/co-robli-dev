@@ -27,23 +27,20 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ee351ea4a207826138bf.js"
+    "url": "webpack-runtime-85f3e97ba37165a15090.js"
   },
   {
-    "url": "framework-1e42adbee740261ad91a.js"
+    "url": "framework-98304b6b6dbd095f1a0a.js"
   },
   {
-    "url": "styles.3432af488564632fee8c.css"
+    "url": "styles.aad96a78736b9b6de37e.css"
   },
   {
-    "url": "app-f0f0af54548d9f70e392.js"
+    "url": "app-2b5c37c129b705cbe428.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "bb100dc7e0d04e20958271078564f70c"
-  },
-  {
-    "url": "polyfill-16e3848f6b5904817387.js"
+    "revision": "93f0e457a6760fc501676cf292bb3816"
   },
   {
     "url": "manifest.webmanifest",
@@ -157,7 +154,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/co-robli-dev/app-f0f0af54548d9f70e392.js`))) {
+  if (!resources || !(await caches.match(`/co-robli-dev/app-2b5c37c129b705cbe428.js`))) {
     return await fetch(event.request)
   }
 
